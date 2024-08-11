@@ -1,0 +1,248 @@
+country_list = [
+    {"Country": "Afghanistan", "Currency": "Afghani", "Code": "AFN"},
+    {"Country": "Armenia", "Currency": "Dram", "Code": "AMD"},
+    {"Country": "Azerbaijan", "Currency": "Manat", "Code": "AZN"},
+    {"Country": "Bahrain", "Currency": "Dinar", "Code": "BHD"},
+    {"Country": "Bangladesh", "Currency": "Taka", "Code": "BDT"},
+    {"Country": "Bhutan", "Currency": "Ngultrum", "Code": "BTN"},
+    {"Country": "Bhutan", "Currency": "Indian Rupee", "Code": "INR"},
+    {"Country": "Brunei", "Currency": "Dollar", "Code": "BND"},
+    {"Country": "Cambodia", "Currency": "Riel", "Code": "KHR"},
+    {"Country": "China", "Currency": "Yuan Renminbi", "Code": "CNY"},
+    {"Country": "Cyprus", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Georgia", "Currency": "Lari", "Code": "GEL"},
+    {"Country": "India", "Currency": "Rupee", "Code": "INR"},
+    {"Country": "Indonesia", "Currency": "Rupiah", "Code": "IDR"},
+    {"Country": "Iran", "Currency": "Rial", "Code": "IRR"},
+    {"Country": "Iraq", "Currency": "Dinar", "Code": "IQD"},
+    {"Country": "Israel", "Currency": "Shekel", "Code": "ILS"},
+    {"Country": "Japan", "Currency": "Yen", "Code": "JPY"},
+    {"Country": "Jordan", "Currency": "Dinar", "Code": "JOD"},
+    {"Country": "Kazakhstan", "Currency": "Tenge", "Code": "KZT"},
+    {"Country": "Kuwait", "Currency": "Dinar", "Code": "KWD"},
+    {"Country": "Kyrgyzstan", "Currency": "Som", "Code": "KGS"},
+    {"Country": "Laos", "Currency": "Kip", "Code": "LAK"},
+    {"Country": "Lebanon", "Currency": "Pound", "Code": "LBP"},
+    {"Country": "Malaysia", "Currency": "Ringgit", "Code": "MYR"},
+    {"Country": "Maldives", "Currency": "Rufiyaa", "Code": "MVR"},
+    {"Country": "Mongolia", "Currency": "Tugrik", "Code": "MNT"},
+    {"Country": "Myanmar", "Currency": "Kyat", "Code": "MMK"},
+    {"Country": "Nepal", "Currency": "Rupee", "Code": "NPR"},
+    {"Country": "North Korea", "Currency": "Won", "Code": "KPW"},
+    {"Country": "Oman", "Currency": "Rial", "Code": "OMR"},
+    {"Country": "Pakistan", "Currency": "Rupee", "Code": "PKR"},
+    {"Country": "Palestine", "Currency": "Israeli New Shekel", "Code": "ILS"},
+    {"Country": "Palestine", "Currency": "Jordanian Dinar", "Code": "JOD"},
+    {"Country": "Philippines", "Currency": "Peso", "Code": "PHP"},
+    {"Country": "Qatar", "Currency": "Riyal", "Code": "QAR"},
+    {"Country": "Saudi Arabia", "Currency": "Riyal", "Code": "SAR"},
+    {"Country": "Singapore", "Currency": "Dollar", "Code": "SGD"},
+    {"Country": "South Korea", "Currency": "Won", "Code": "KRW"},
+    {"Country": "Sri Lanka", "Currency": "Rupee", "Code": "LKR"},
+    {"Country": "Syria", "Currency": "Pound", "Code": "SYP"},
+    {"Country": "Taiwan", "Currency": "Dollar", "Code": "TWD"},
+    {"Country": "Tajikistan", "Currency": "Somoni", "Code": "TJS"},
+    {"Country": "Thailand", "Currency": "Baht", "Code": "THB"},
+    {"Country": "Timor-Leste", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Turkey", "Currency": "Lira", "Code": "TRY"},
+    {"Country": "Turkmenistan", "Currency": "Manat", "Code": "TMT"},
+    {"Country": "United Arab Emirates", "Currency": "Dirham", "Code": "AED"},
+    {"Country": "Uzbekistan", "Currency": "Som", "Code": "UZS"},
+    {"Country": "Vietnam", "Currency": "Dong", "Code": "VND"},
+    {"Country": "Yemen", "Currency": "Rial", "Code": "YER"},
+
+    {"Country": "Argentina", "Currency": "Peso", "Code": "ARS"},
+    {"Country": "Bolivia", "Currency": "Boliviano", "Code": "BOB"},
+    {"Country": "Brazil", "Currency": "Real", "Code": "BRL"},
+    {"Country": "Chile", "Currency": "Peso", "Code": "CLP"},
+    {"Country": "Colombia", "Currency": "Peso", "Code": "COP"},
+    {"Country": "Ecuador", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Guyana", "Currency": "Dollar", "Code": "GYD"},
+    {"Country": "Paraguay", "Currency": "Guarani", "Code": "PYG"},
+    {"Country": "Peru", "Currency": "Sol", "Code": "PEN"},
+    {"Country": "Suriname", "Currency": "Dollar", "Code": "SRD"},
+    {"Country": "Uruguay", "Currency": "Peso", "Code": "UYU"},
+    {"Country": "Venezuela", "Currency": "Bolívar", "Code": "VES"},
+
+    {"Country": "Belize", "Currency": "Dollar", "Code": "BZD"},
+    {"Country": "Costa Rica", "Currency": "Colón", "Code": "CRC"},
+    {"Country": "CostaRica", "Currency": "Colón", "Code": "CRC"},
+    {"Country": "El Salvador", "Currency": "Dollar", "Code": "USD"},
+    # Another bad match. Need a fuzzy match type search
+    {"Country": "ElSalvador", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Guatemala", "Currency": "Quetzal", "Code": "GTQ"},
+    {"Country": "Honduras", "Currency": "Lempira", "Code": "HNL"},
+    {"Country": "Nicaragua", "Currency": "Córdoba", "Code": "NIO"},
+    {"Country": "Panama", "Currency": "Balboa", "Code": "PAB"},
+    {"Country": "Panama", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Canada", "Currency": "Dollar", "Code": "CAD"},
+    {"Country": "Greenland", "Currency": "Krone", "Code": "DKK"},
+    {"Country": "Mexico", "Currency": "Peso", "Code": "MXN"},
+    {"Country": "United States", "Currency": "Dollar", "Code": "USD"},
+       # added a synonym by hand. TODO - find a better way to get a match
+    {"Country": "US", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "USA", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "UnitedStates", "Currency": "Dollar", "Code": "USD"},
+ 
+    {"Country": "Albania", "Currency": "Lek", "Code": "ALL"},
+    {"Country": "Andorra", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Armenia", "Currency": "Dram", "Code": "AMD"},
+    {"Country": "Austria", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Azerbaijan", "Currency": "Manat", "Code": "AZN"},
+    {"Country": "Belarus", "Currency": "Ruble", "Code": "BYN"},
+    {"Country": "Belgium", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Bosnia and Herzegovina", "Currency": "Convertible Mark", "Code": "BAM"},
+    {"Country": "Bulgaria", "Currency": "Lev", "Code": "BGN"},
+    {"Country": "Croatia", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Cyprus", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Czech Republic", "Currency": "Koruna", "Code": "CZK"},
+    {"Country": "Denmark", "Currency": "Krone", "Code": "DKK"},
+    {"Country": "Estonia", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Finland", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "France", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Georgia", "Currency": "Lari", "Code": "GEL"},
+    {"Country": "Germany", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Greece", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Hungary", "Currency": "Forint", "Code": "HUF"},
+    {"Country": "Iceland", "Currency": "Krona", "Code": "ISK"},
+    {"Country": "Ireland", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Italy", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Kazakhstan", "Currency": "Tenge", "Code": "KZT"},
+    {"Country": "Kosovo", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Latvia", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Liechtenstein", "Currency": "Swiss Franc", "Code": "CHF"},
+    {"Country": "Lithuania", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Luxembourg", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Malta", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Moldova", "Currency": "Leu", "Code": "MDL"},
+    {"Country": "Monaco", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Montenegro", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Netherlands", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "North Macedonia", "Currency": "Denar", "Code": "MKD"},
+    {"Country": "Norway", "Currency": "Krone", "Code": "NOK"},
+    {"Country": "Poland", "Currency": "Zloty", "Code": "PLN"},
+    {"Country": "Portugal", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Romania", "Currency": "Leu", "Code": "RON"},
+    {"Country": "Russia", "Currency": "Ruble", "Code": "RUB"},
+    {"Country": "San Marino", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Serbia", "Currency": "Dinar", "Code": "RSD"},
+    {"Country": "Slovakia", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Slovenia", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Spain", "Currency": "Euro", "Code": "EUR"},
+    {"Country": "Sweden", "Currency": "Krona", "Code": "SEK"},
+    {"Country": "Switzerland", "Currency": "Franc", "Code": "CHF"},
+    {"Country": "Turkey", "Currency": "Lira", "Code": "TRY"},
+    {"Country": "Ukraine", "Currency": "Hryvnia", "Code": "UAH"},
+    {"Country": "United Kingdom", "Currency": "Pound Sterling", "Code": "GBP"},
+    # added a synonym by hand. TODO - find a better way to get a match
+    {"Country": "UK", "Currency": "Pound Sterling", "Code": "GBP"},
+     {"Country": "Vatican City", "Currency": "Euro", "Code": "EUR"},
+
+    {"Country": "Algeria", "Currency": "Dinar", "Code": "DZD"},
+    {"Country": "Angola", "Currency": "Kwanza", "Code": "AOA"},
+    {"Country": "Benin", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Botswana", "Currency": "Pula", "Code": "BWP"},
+    {"Country": "Burkina Faso", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Burundi", "Currency": "Franc", "Code": "BIF"},
+    {"Country": "Cape Verde", "Currency": "Escudo", "Code": "CVE"},
+    {"Country": "Cameroon", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Central African Republic", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Chad", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Comoros", "Currency": "Franc", "Code": "KMF"},
+    {"Country": "Congo (Brazzaville)", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Congo (Kinshasa)", "Currency": "Congolese Franc", "Code": "CDF"},
+    {"Country": "Djibouti", "Currency": "Franc", "Code": "DJF"},
+    {"Country": "Egypt", "Currency": "Pound", "Code": "EGP"},
+    {"Country": "Equatorial Guinea", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Eritrea", "Currency": "Nakfa", "Code": "ERN"},
+    {"Country": "Eswatini (Swaziland)", "Currency": "Lilangeni", "Code": "SZL"},
+    {"Country": "Ethiopia", "Currency": "Birr", "Code": "ETB"},
+    {"Country": "Gabon", "Currency": "CFA Franc", "Code": "XAF"},
+    {"Country": "Gambia", "Currency": "Dalasi", "Code": "GMD"},
+    {"Country": "Ghana", "Currency": "Cedi", "Code": "GHS"},
+    {"Country": "Guinea", "Currency": "Franc", "Code": "GNF"},
+    {"Country": "Guinea-Bissau", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Ivory Coast", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Kenya", "Currency": "Shilling", "Code": "KES"},
+    {"Country": "Lesotho", "Currency": "Loti", "Code": "LSL"},
+    {"Country": "Liberia", "Currency": "Dollar", "Code": "LRD"},
+    {"Country": "Libya", "Currency": "Dinar", "Code": "LYD"},
+    {"Country": "Madagascar", "Currency": "Ariary", "Code": "MGA"},
+    {"Country": "Malawi", "Currency": "Kwacha", "Code": "MWK"},
+    {"Country": "Mali", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Mauritania", "Currency": "Ouguiya", "Code": "MRU"},
+    {"Country": "Mauritius", "Currency": "Rupee", "Code": "MUR"},
+    {"Country": "Morocco", "Currency": "Dirham", "Code": "MAD"},
+    {"Country": "Mozambique", "Currency": "Metical", "Code": "MZN"},
+    {"Country": "Namibia", "Currency": "Dollar", "Code": "NAD"},
+    {"Country": "Niger", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Nigeria", "Currency": "Naira", "Code": "NGN"},
+    {"Country": "Rwanda", "Currency": "Franc", "Code": "RWF"},
+    {"Country": "Sao Tome and Principe", "Currency": "Dobra", "Code": "STN"},
+    {"Country": "Senegal", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Seychelles", "Currency": "Rupee", "Code": "SCR"},
+    {"Country": "Sierra Leone", "Currency": "Leone", "Code": "SLL"},
+    {"Country": "Somalia", "Currency": "Shilling", "Code": "SOS"},
+    {"Country": "South Africa", "Currency": "Rand", "Code": "ZAR"},
+    {"Country": "South Sudan", "Currency": "Pound", "Code": "SSP"},
+    {"Country": "Sudan", "Currency": "Pound", "Code": "SDG"},
+    {"Country": "Tanzania", "Currency": "Shilling", "Code": "TZS"},
+    {"Country": "Togo", "Currency": "CFA Franc", "Code": "XOF"},
+    {"Country": "Tunisia", "Currency": "Dinar", "Code": "TND"},
+    {"Country": "Uganda", "Currency": "Shilling", "Code": "UGX"},
+    {"Country": "Zambia", "Currency": "Kwacha", "Code": "ZMW"},
+    {"Country": "Zimbabwe", "Currency": "Dollar", "Code": "ZWL"},
+    {"Country": "Australia", "Currency": "Dollar", "Code": "AUD"},
+    {"Country": "Fiji", "Currency": "Dollar", "Code": "FJD"},
+    {"Country": "Kiribati", "Currency": "Dollar", "Code": "AUD"},
+    {"Country": "Marshall Islands", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Micronesia", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Nauru", "Currency": "Dollar", "Code": "AUD"},
+    {"Country": "New Zealand", "Currency": "Dollar", "Code": "NZD"},
+    {"Country": "NewZealand", "Currency": "Dollar", "Code": "NZD"},
+    {"Country": "Palau", "Currency": "Dollar", "Code": "USD"},
+    {"Country": "Papua New Guinea", "Currency": "Kina", "Code": "PGK"},
+    {"Country": "Samoa", "Currency": "Tala", "Code": "WST"},
+    {"Country": "Solomon Islands", "Currency": "Dollar", "Code": "SBD"},
+    {"Country": "Tonga", "Currency": "Paʻanga", "Code": "TOP"},
+    {"Country": "Tuvalu", "Currency": "Dollar", "Code": "AUD"},
+    {"Country": "Vanuatu", "Currency": "Vatu", "Code": "VUV"}
+]
+
+def get_currency_code(country_name):
+    for entry in country_list:
+        if entry["Country"].lower() == country_name.lower():
+            return entry["Code"]
+    return None
+
+def get_currency_name(country_name):
+    for entry in country_list:
+        if entry["Country"].lower() == country_name.lower():
+            return entry["Currency"]
+        
+        if entry["Country"].lower().replace(" ", "") == country_name.lower():
+            #Handles case where UnitedStates is passed in and should match United States
+            return entry["Currency"]
+
+    return None
+
+def is_country_found(country_name):
+    """
+    Checks if a country is found in the list of country dictionaries.
+
+    :param country_list: List of dictionaries containing country information.
+    :param country_name: String representing the name of the country to find.
+    :return: True if the country is found, False otherwise.
+    """
+    for country_dict in country_list:
+        if country_dict.get('Country') == country_name:
+            return True
+        if country_dict.get('Country') .lower() == country_name.lower():
+            return True
+        if country_dict.get('Country') .lower().replace(" ", "") == country_name.lower():
+            #Handles case where UnitedStates is passed in and should match United States
+            return True
+    return False
+
+
+
